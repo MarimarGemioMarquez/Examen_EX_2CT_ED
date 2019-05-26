@@ -19,4 +19,21 @@ public class Directivo  extends Empleado {
 	public double obtenerSalario() {
 		return this.sueldobase * this.NIVEL;
 	}
+
+	public double getNIVEL() {
+		return NIVEL;
+	}
+
+	public void setNIVEL(double nIVEL) {
+		NIVEL = nIVEL;
+	}
+
+	@Override
+	public String toString() {
+		return "Directivo [NIVEL=" + NIVEL + ", nombre=" + nombre + ", sueldobase=" + sueldobase + ", obtenerSalario()="
+				+ obtenerSalario() + ", getNIVEL()=" + getNIVEL() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+	
+	
 }
